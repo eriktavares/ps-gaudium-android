@@ -119,19 +119,23 @@ url: https://dbgapi-desenv.taximachine.com.br/ps/perfil.php
 ```
 
 ### Etapa 2 - As estatísticas precisam ser calculadas <!-- 20 minutos -->
+
 #### Verificar dados recebidos e preencher as estatísticas
+
 Se olhar para a resposta da API, não vão ter informações claras sobre saldo, avaliação do motorista e nem quantidade total de entregas, mas tem o histórico dele. A partir dos dados recebidos no histórico, calcule e preencha os seguintes indicadores:
-    - Quantidade total de produtos entregues
-    - Média de avaliações das entregas
-    - Saldo, em reais, com o total recebido. O valor deverá ser formatado para ser exibido de acordo com as regras da moeda Real.
+- Quantidade total de produtos entregues
+- Média de avaliações das entregas
+- Saldo, em reais, com o total recebido.
+  - O valor deverá ser formatado para ser exibido de acordo com as regras da moeda Real.
     
  <!-- Total até aqui: 120 min -->
-### Conclusões
+## Conclusões
 
-- Não existe uma forma específica de resolver cada questão. Veja o que você considera como melhor solução considerando a qualidade do resultado, do código e o tempo restante.
+- Não existe uma forma específica de resolver cada questão. Veja o que você considera como melhor solução considerando a qualidade do resultado e o tempo restante.
 - A prova deverá ser realizada com a câmera ligada e microfone no mudo.
 - Vocês podem se ausentar sem precisar pedir permissão, apenas fiquem atentos ao tempo restante.
 - Em caso de dúvidas, tire o microfone do mudo e chame o responsável pela prova.
   - Caso o responsável não esteja presente no momento, levante a mão pelo Google Meet para que fique sinalizado a dúvida.
+- Quando faltarem 20 minutos para terminar a prova, vocês serão notificados pelo revisor. Caso veja que não vai dar tempo, deixe o máximo de comentários indicando quais seriam os próximos passos para concluir cada questão.
 
 E mais importante, boa sorte e boa prova! :)
