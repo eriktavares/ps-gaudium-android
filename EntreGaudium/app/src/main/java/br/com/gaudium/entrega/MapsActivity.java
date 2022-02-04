@@ -2,6 +2,7 @@ package br.com.gaudium.entrega;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -22,7 +23,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.Serializable;
+
+import br.com.gaudium.entrega.Acitivity.DateHistoryActivity;
 import br.com.gaudium.entrega.maps.LatLngInterpolator;
 import br.com.gaudium.entrega.model.DebugLocationRetriever;
 import br.com.gaudium.entrega.model.EntregadorObj;
@@ -36,6 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private RelativeLayout layColetaButton, layEntregaButton, layMenu;
     private TextView txtEnderecoOferta, txtEnderecoColeta, txtEntrega;
     private Button btnRejeitar, btnAceitar, btnColetar, btnEntregar, btnDebugAction;
+    private FloatingActionButton fabClientInformation;
 
     Handler handler;
 
@@ -423,5 +429,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 updateScreen();
             }
         }
+    }
+    private void startupFABClientInformation()
+    {
+        fabClientInformation = findViewById(R.id.floatingActionButton_open_client_information);
+        fabClientInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startDateHistoryActivity();
+            }
+        });
+    }
+    private void startDateHistoryActivity()
+    {
+        Intent i = new Intent(this,
+                DateHistoryActivity.class);
+        i.putExtra("Coletor", (Serializable) entregadorObj);
+        startActivity(i);
     }
 }

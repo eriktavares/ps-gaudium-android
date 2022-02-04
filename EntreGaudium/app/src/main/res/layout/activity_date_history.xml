@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC2B76C9"
+        android:layout_marginBottom="350dp"
+        android:layout_marginTop="270dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/data_history_activity_coletor_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans"
+                android:text="TextView"
+                android:textColor="@color/WhiteColor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/data_history_activity_coletor_cargo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans_light"
+                android:text="TextView"
+                android:textColor="@color/WhiteColor"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82B4FE"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/data_history_activity_coletor_photo"
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/img_entregador" />
+
+        <TextView
+            android:id="@+id/data_history_activity_Coletor_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:textColor="@color/WhiteColor"
+            android:fontFamily="@font/open_sans_light"
+            android:textSize="24sp"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="35dp"
+            android:foreground="#82B4FE">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/data_history_activity_ic_entregas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/ic_entregas" />
+
+                <TextView
+                    android:id="@+id/data_history_activity_entregas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Entregas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/data_history_activity_ic_saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_entregas" />
+
+                <TextView
+                    android:id="@+id/data_history_activity_saldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/ColetorSalde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/data_history_activity_ic_nota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_entregas" />
+
+                <TextView
+                    android:id="@+id/data_history_activity_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/WhiteColor"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/ColetorNote" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

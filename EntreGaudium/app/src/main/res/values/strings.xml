@@ -14,4 +14,7 @@
     <string name="button_oferta_rejeitar">Rejeitar</string>
     <string name="label_endereco_entrega">Vá até o endereço</string>
     <string name="label_endereco_coleta">Local de coleta</string>
+    <string name="ColetorNote">Nota</string>
+    <string name="ColetorSalde">Saldo</string>
+    <string name="ColetorDeliveres">Entregas</string>
 </resources>

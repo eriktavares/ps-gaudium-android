@@ -176,4 +176,13 @@
         android:drawableTop="@drawable/ic_bug"
         android:text="Solicitar pedido"
         android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_open_client_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="26dp"
+        android:clickable="true"
+        map:srcCompat="@android:drawable/ic_menu_info_details" />
 </RelativeLayout>
