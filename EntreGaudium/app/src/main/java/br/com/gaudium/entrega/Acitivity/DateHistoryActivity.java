@@ -41,7 +41,7 @@ public class DateHistoryActivity extends AppCompatActivity {
     }
     private void startupTextViews()
     {
-        
+
     }
 
 }
